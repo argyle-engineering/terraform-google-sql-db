@@ -121,6 +121,12 @@ variable "pricing_plan" {
   default     = "PER_USE"
 }
 
+variable "maintenance_window_enabled" {
+  description = "Whether to enable maintenance window setting for the instance. This does not apply to replicas."
+  type        = bool
+  default     = true
+}
+
 variable "maintenance_window_day" {
   description = "The day of week (1-7) for the master instance maintenance."
   type        = number
